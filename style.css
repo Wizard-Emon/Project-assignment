@@ -430,7 +430,6 @@ section .lastContainer .map {
   top: 20%;
   left: 2%;
   box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.3);
-  
 }
 section .lastContainer .frm {
   width: 60%;
@@ -472,4 +471,82 @@ footer {
   position: relative;
   top: 480px;
   box-shadow: 8px 20px 45px rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-family: "Roboto";
+}
+footer .main {
+  width: 50%;
+  height: 100%;
+}
+footer .main .hed {
+  display: inline-block;
+  line-height: 47px;
+  position: absolute;
+  left: 10%;
+  top: 17%;
+  font-family: "Roboto";
+  padding: 10px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.fab,
+.far {
+  font-weight: 400;
+  padding: 13px;
+  align-items: center;
+}
+footer .main .para {
+  position: absolute;
+  display: inline-block;
+  top: 85%;
+  left: 10%;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 0.5;
+}
+footer .main p {
+}
+footer .menuB {
+  width: 30%;
+  height: 100%;
+}
+footer .menuB1 {
+  width: 20%;
+  height: 100%;
+}
+footer .menuB ul {
+  list-style: none;
+  top: 21%;
+  position: absolute;
+  left: 60%;
+  line-height: 24px;
+}
+footer .menuB ul li {
+}
+footer .menuB ul li a {
+  text-decoration: none;
+  color: #030303;
+  opacity: 0.5;
+}
+footer .menuB ul li a:hover {
+  color: rgb(255, 60, 0);
+}
+
+footer .menuB1 ul {
+  list-style: none;
+  top: 21%;
+  position: absolute;
+  left: 75%;
+  line-height: 24px;
+}
+footer .menuB1 ul li {
+}
+footer .menuB1 ul li a {
+  text-decoration: none;
+  color: #050202;
+  opacity: 0.5;
+}
+footer .menuB1 ul li a:hover {
+  color: rgb(255, 60, 0);
 }
