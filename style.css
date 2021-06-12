@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Fredoka One", cursive;
+}
+
+/*This is header section*/
+header {
+  width: 100%;
+  background: rgb(248, 247, 244);
+  position: fixed;
+  box-shadow: 0px 8px 29px 0px rgba(8, 4, 8, 0.93);
+  display: flex;
+  z-index: 11;
+}
+/*this is loog*/
+header .logo {
+  width: 20%;
+  text-align: center;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+header .logo .logoPic {
+  font-weight: 100;
+}
+header .navBar {
+  width: 60%;
+  display: flex;
+}
+/*this is the navBar*/
+header .navBar ul {
+  display: flex;
+  margin-left: auto;
+  z-index: 16;
+}
+header .navBar ul li {
+  list-style-type: none;
+  position: relative;
+}
+/*this is dropdown menu*/
+header .navBar ul li {
+  color: green;
+  display: contents;
+}
+header .navBar ul li:hover > ul {
+  display: block;
+}
+header .navBar ul li .store:hover {
+  background-color: #fff;
+  color: #fff;
+}
+header .navBar ul li ul {
+  background-color: rgba(4, 7, 4, 0.295);
+  position: absolute;
+
+  left: 60%;
+  top: 100%;
+  display: none;
+}
+header .navBar ul li ul li {
+  position: relative;
+}
+
+header .navBar ul li ul li ul {
+  position: absolute;
+
+  top: 60%;
+
+  left: 100%;
+}
+
+header .navBar ul li .dropdownMenu li a {
+  color: #fff;
+  transition: 0.5s;
+}
+
+header .navBar ul li .dropdownMenu li a:hover {
+  background: slategray;
+}
+
+header .navBar ul a {
+  text-decoration: none;
+  padding: 20px 40px;
+  display: block;
+  color: rgb(112, 97, 78);
+  transition: 0.5s;
+  position: relative;
+}
+header .navBar ul a::after {
+  content: "";
+  position: absolute;
+  width: 1%;
+  height: 2.5px;
+  display: none;
+  background-color: red;
+  top: 95%;
+  left: 0%;
+  transition: 2s;
+}
+header .navBar ul a:hover::after {
+  display: block;
+
+  width: 100%;
+}
+
+header .navBar ul a:hover {
+  background: rgba(0, 3, 0, 0.363);
+  border: none;
+  color: seashell;
+}
+/*there NavBar finished*/
+
+/* there searchbar start*/
+
+header .searchBar {
+  width: 20%;
+  position: relative;
+}
+header .searchBar .sbtn {
+  padding: 20px 40px 0px 36px;
+}
+
+header .searchBar .sbtn .input {
+  width: 65%;
+  height: 19px;
+  border-bottom: 2px solid #000000c7;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  background: none;
+  outline: none;
+}
+header .searchBar .sbtn .searchBtn {
+  width: 10;
+  width: 30%;
+  height: 26px;
+  border: none;
+  font-size: 14px;
+  background: #ff8e87;
+  font-family: sans-serif;
+  color: antiquewhite;
+  border-radius: 50px;
+  font-weight: 100;
+}
+header .searchBar .sbtn .input:hover {
+  background: none;
+  outline: none;
+}
+header .searchBar .sbtn .searchBtn:hover {
+  background: none;
+  border: 1px solid #ff8e87;
+  color: black;
+  transition: 0.6s;
+}
+/* searchbar ends here*/
+
+/* header ends here */
+
+/* main container starts here*/
+section {
+  position: relative;
+  top: 60px;
+}
+section .mainContainer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  width: 100%;
+  height: 580px;
+  background: url("1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 20%;
+}
+section .mainContainer .cont {
+  height: 400px;
+  width: 30%;
+  position: absolute;
+  left: 55%;
+  top: 7%;
+  color: #cdd1e0;
+  font-weight: 150;
+  line-height: 20px;
+}
+section .mainContainer .cont:hover {
+  color: rgb(199, 172, 189);
+}
+section .mainContainer .cont .heading {
+  display: inline-block;
+  padding: 23px 0px;
+}
+section .mainContainer .cont marquee {
+  border-right: 1px solid rgb(238, 231, 231);
+  border-left: 1px solid rgb(241, 15, 15);
+  color: rgb(250, 246, 246);
+  text-transform: uppercase;
+}
+section .mainContainer .cont .mbtn {
+  width: 10;
+  width: 30%;
+  height: 26px;
+  margin-top: 20px;
+  border: none;
+  font-size: 14px;
+  background: #ff8e87;
+  font-family: sans-serif;
+  color: antiquewhite;
+  border-radius: 50px;
+}
+section .mainContainer .cont .mbtn:hover {
+  background: none;
+  border: 1px solid #ff8e87;
+  color: rgb(238, 229, 229);
+  transition: 0.6s;
+}
+/*main container ends here*/
+
+/* sub container starts here */
+section .subContainer {
+  height: 300px;
+  width: 100%;
+
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-20deg, #d36a61 20%, #e0b897c5 50%, #fff 60%, #fff 100%);
+}
+section .subContainer .contentBox {
+  width: 70%;
+  left: 15%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+section .subContainer .contents {
+  position: relative;
+  width: 223px;
+  height: 210px;
+  top: 60px;
+  background: rgb(248, 246, 246);
+  padding: 80px 40px 87px;
+  margin-top: 36px;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.363);
+  border-radius: 20px;
+}
+section .subContainer .contents:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(214, 69, 190, 0.938);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+section .subContainer .contents:hover:before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+section .subContainer .contents h2 {
+  position: absolute;
+  left: 203px;
+  top: 25px;
+  font-size: 3em;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  font-weight: 400;
+}
+section .subContainer .contents:hover h2 {
+  opacity: 1;
+  color: #fff;
+  transform: translateY(-30px);
+}
+section .subContainer .contents h1 {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.6em;
+  z-index: 2;
+  opacity: 1;
+  transition: 0.5s;
+  font-weight: 400;
+  padding: 0px 0px 2px 0px;
+}
+section .subContainer .contents:hover h1 {
+  opacity: 1;
+  color: #fff;
+}
+section .subContainer .contents p {
+  position: relative;
+  font-weight: 100;
+  color: #555;
+  z-index: 2;
+  opacity: 1;
+  transition: 0.5s;
+  font-weight: 400;
+  padding: 0px 0px 2px 0px;
+}
+section .subContainer .contents:hover p {
+  opacity: 1;
+  color: #fff;
+}
+/* subcontainer ends here*/
+/*login form starts here*/
+section .loginForm {
+  height: 700px;
+  width: 100%;
+
+  position: relative;
+  top: 600px;
+  display: flex;
+}
+section .loginForm .youtube {
+  width: 40%;
+  position: absolute;
+  top: 23%;
+  height: 400px;
+  left: 2%;
+  z-index: 0;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
+}
+section .loginForm .youtube iframe {
+  width: 100%;
+  height: 100%;
+}
+
+section .loginForm .signUpform {
+  width: 50%;
+  height: 500px;
+
+  position: absolute;
+  left: 48%;
+  top: 15%;
+  right: 2%;
+  display: flex;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
+}
+
+section .loginForm .signUpform .photo {
+  width: 30%;
+  height: 100%;
+  background: url("2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
+}
+section .loginForm .signUpform .signUp {
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
+}
+section .loginForm .signUpform .signUp {
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  display: inline-grid;
+  padding: 47px 0px 0px 50px;
+  line-height: 44px;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+section .loginForm .signUpform form {
+  width: 70%;
+}
+section .loginForm .signUpform form .signUp input {
+  border: none;
+  border-bottom: 1px solid #d25f5fbf;
+  padding: 0px 0px 0px 6px;
+
+  outline: none;
+  font-weight: 100;
+}
+section .loginForm .signUpform form .signUp .btn {
+  display: flex;
+  margin-top: 20px;
+}
+section .loginForm .signUpform form .signUp .btn input {
+}
+section .loginForm .signUpform form .signUp .btn input {
+  width: 30%;
+  height: 26px;
+  border: none;
+  font-size: 14px;
+  background: #ff8e87;
+  font-family: sans-serif;
+  color: antiquewhite;
+  border-radius: 50px;
+  font-weight: 100;
+}
+section .loginForm .signUpform form .signUp .btn input:hover {
+  background: none;
+  border: 1px solid #ff8e87;
+  color: black;
+  transition: 0.6s;
+}
+
+/* login from ends here*/
+/* contact section starts here*/
+
+section .lastContainer {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  font-family: "Roboto";
+  top: 527px;
+  display: flex;
+}
+section .lastContainer .hding {
+  text-transform: uppercase;
+  font-size: 30px;
+  position: absolute;
+  display: inline-block;
+  left: 45%;
+  top: 6%;
+  color: #327931;
+}
+section .lastContainer .map {
+  width: 40%;
+  height: 300px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.3);
+  
+}
+section .lastContainer .frm {
+  width: 60%;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+section .lastContainer .frm form {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  display: inline-grid;
+}
+
+section .lastContainer .frm form .btn2 {
+  width: 30%;
+  height: 26px;
+  border: none;
+  font-size: 14px;
+  background: #0a0a0a;
+  font-family: sans-serif;
+  color: antiquewhite;
+  border-radius: 50px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+section .lastContainer .frm form .btn2:hover {
+  background: none;
+  border: 1px solid #292323;
+  color: black;
+  transition: 0.6s;
+}
+footer {
+  width: 100%;
+  height: 300px;
+  background: #f8f7f3;
+  position: relative;
+  top: 480px;
+  box-shadow: 8px 20px 45px rgba(0, 0, 0, 0.7);
+}
